@@ -1,0 +1,67 @@
+@media only screen and (max-width: 700px) {
+    .videos-container{
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+    .low-tube-videos{
+        margin: 0;
+        padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 337px) {
+    .video-container-styles-apply-devices{
+        flex-direction: column;
+        align-items: baseline;
+    }
+  }
+
+
+@media only screen and (max-width: 900px) {
+    .nav-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .row-form,
+    .form{
+        width: 100%;
+        margin-left: 0;
+    }
+    .row-form{
+        padding: 15px;
+    }
+    .logo-container{
+        margin-right: auto;
+        padding: 5px 0px 0px 5px;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    
+    .form{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .video-container-styles-apply-devices{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .number-of-views-and-and-post-time{
+        padding-left: 12px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    
+    .form{
+        
+        margin-left: 400px;
+    }
+    
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto 0px;
+  }

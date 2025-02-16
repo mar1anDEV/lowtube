@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/src/js/css/navbar.css">
+  </head>
+  <body class="min-h-screen bg-gradient-to-r from-violet-600 to-violet-700 w-full max-w-full scroll-smooth antialiased font-sans text-opacity-90 leading-normal sm:leading-relaxed md:leading-loose text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl  tracking-wide overscroll-none focus:outline-none break-words bg-gray-100">
+    <nav class="navbar-main max-w-full h-auto bg-violet-800 w-full">
+        <div class="nav-container mx-auto flex items-center  p-4">
+              <div class="logo-container cursor-pointer flex">
+                <a href="index.html">
+                  <div class="image-logo">
+                    <img 
+                          src="/assets/images/play-button-purple-3d-design-inviting-video-playback.png" 
+                          width="80" height="80"
+                          decoding="async"
+                          class="w-20 h-auto rounded transition-all duration-300 hover:scale-110" 
+                          alt="Play button with purple 3D design for video playback" 
+                          loading="eager">
+                </div>
+                </a>
+              <div class="logo-title flex items-center justify-center">
+                  <a href="index.html" class="flex items-center space-x-2">
+                    <h1 class="text-xl sm:text-2xl font-bold text-yellow-300">LowTube</h1>
+                  </a>
+                </div>
+          </div>
+            <div class="row-form flex flex-grow  justify-normal">
+              <form action="/src/js/results.js" method="get" target="_self" name="searchForm" id="searchForm" accept-charset="UTF-8" autocomplete="on" novalidate class="mr-auto flex relative form w-[600px]" aria-labelledby="searchFormLabel">
+                <label for="input-form" class="sr-only">Search</label>
+                <input type="text" placeholder="Search..." required autocomplete="off" maxlength="100" pattern="[A-Za-z0-9]+" aria-label="Search field" name="search_query" id="input-form" class="bg-violet-950 h-11 text-xl text-white placeholder-gray-400 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-violet-600 transition duration-150 w-full">
+                <button type="submit" class="h-[100%] w-[44px] cursor-pointer absolute right-0 top-0" aria-label="Search button">
+                    <img src="assets/images/search-svgrepo-com.svg" class="p-1" alt="Search icon" srcset="">
+                </button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="low-tube-videos lg:p-10 ">
+      <div class="videos-container flex flex-wrap gap-8 justify-evenly" id="videosContainer">
+      
+        
+
+
+        <div class="video-container flex flex-col cursor-pointer lg:w-[380px] md:w-[380px] sm:w-[380px]  rounded-[5px]">
+          <!-- Video Image and Time -->
+          <div class="video-container-image-time relative">
+            <div class="video-container-image">
+              <img src="/assets/images/hq720.avif" class="bg-transparent w-full rounded-md h-auto" alt="Video thumbnail of Name of the video">
+            </div>
+            <div class="video-time text-white absolute bottom-2 right-3 p-1 rounded">
+              <time class="text-sm bg-black p-1">2:23</time>
+            </div>
+          </div>
+        
+          <!-- Video Info Section -->
+          <div class="video-container-info p-1 pt-[10px] flex">
+            <div class="author-img-profile">
+              <img src="/assets/images/unnamed.jpg" class="rounded-[50%] w-[40px]" alt="Author profile image">
+            </div>
+            <div class="video-container-author-title-name-more-info w-full">
+              <div class="video-title">
+                <h1 class="text-xl text-left pl-3">Name of the video</h1>
+              </div>
+              
+              <div class="video-container-styles-apply-devices  flex items-center">
+                <div class="video-author-name">
+                  <p class="text-sm pl-3">Author name</p>
+                </div>
+                <div class="number-of-views-and-and-post-time mt-[2px]  pl-2 flex  space-x-1">
+                  <div class="views"><p class="text-xs">343K views</p></div>
+                  <span class="dot"></span> 
+                  <div class="post-time ml-1"><p class="text-xs">16 hours ago</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        
+        
+        
+      </div>
+    </section>
+  </body>
+  <script src="/src/js/results.js"></script>
+</html>
